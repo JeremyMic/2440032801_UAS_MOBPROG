@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="2dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="6dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    android:id="@+id/cardView">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/movieImage"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/movieTitle"
+            android:layout_toEndOf="@+id/movieImage"
+            android:textColor="@color/black"
+            android:textFontWeight="700"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:textSize="24dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/movieScore"
+            android:drawableLeft="@drawable/star_24"
+            android:layout_toEndOf="@+id/movieImage"
+            android:layout_below="@+id/movieTitle"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detailBtn"
+            android:layout_toEndOf="@id/movieImage"
+            android:layout_below="@id/movieScore"
+            android:layout_marginLeft="16dp"
+            android:layout_alignParentBottom="true"
+            android:text="Detail"
+            android:backgroundTint="#357AF3"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reserveBtn"
+            android:layout_toEndOf="@id/detailBtn"
+            android:layout_below="@id/movieScore"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="40dp"
+            android:text="Reserve"
+            android:backgroundTint="#0F6112"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

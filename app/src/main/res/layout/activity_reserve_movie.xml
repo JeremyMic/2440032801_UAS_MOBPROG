@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReserveMovieActivity"
+    android:background="#ECE8DD">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reserve"
+        android:text="Reserve Cinema"
+        android:textSize="28dp"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:paddingVertical="10dp"
+        android:gravity="center_horizontal"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleRes"
+        android:layout_below="@id/reserve"
+        android:text="Movie Title"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleInput"
+        android:layout_below="@id/titleRes"
+        android:layout_marginHorizontal="10dp"
+        android:inputType="text"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameRes"
+        android:layout_below="@id/titleInput"
+        android:text="Customer Name"
+        android:hint="Input Customer Name"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameInput"
+        android:layout_below="@id/nameRes"
+        android:layout_marginHorizontal="10dp"
+        android:inputType="text"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cinemaRes"
+        android:layout_below="@id/nameInput"
+        android:text="Cinema Location"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cinemaSpinner"
+        android:layout_below="@id/cinemaRes"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/roomRes"
+        android:layout_below="@id/cinemaSpinner"
+        android:text="Room"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/roomSpinner"
+        android:layout_below="@id/roomRes"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateRes"
+        android:layout_below="@id/roomSpinner"
+        android:text="Reservation Date"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chooseDateBtn"
+        android:layout_below="@+id/dateRes"
+        android:backgroundTint="@color/black"
+        android:layout_margin="10dp"
+        android:text="Choose Date"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateInput"
+        android:layout_below="@id/chooseDateBtn"
+        android:layout_marginHorizontal="10dp"
+        android:inputType="date"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submitBtn"
+        android:layout_below="@+id/dateInput"
+        android:backgroundTint="#4CAF50"
+        android:layout_centerHorizontal="true"
+        android:text="Reserve"
+        android:layout_marginTop="12dp"
+        />
+
+</RelativeLayout>

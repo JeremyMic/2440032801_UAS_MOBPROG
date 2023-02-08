@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CinemaFragment"
+    android:background="#ECE8DD">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cinema"
+            android:text="Cinema Locations"
+            android:textSize="28dp"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:paddingVertical="10dp"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cinemaAlpha"
+            android:layout_below="@id/cinema"
+            android:text="Cinema CGP Alpha"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textFontWeight="700"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="16dp"
+            />
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="140dp"
+            android:id="@+id/cinemaAlphaImg"
+            android:layout_below="@id/cinemaAlpha"
+            android:src="@drawable/cinemaalpha"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addressTitleAlpha"
+            android:layout_toEndOf="@+id/cinemaAlphaImg"
+            android:layout_below="@id/cinemaAlpha"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:text="Address:\n\nJl. Kemanggisan Ilir III, RT.12/RW.6, Kemanggisan, Kec. Palmerah, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11480"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/showMap"
+            android:text="Show on Map"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="10dp"
+            android:layout_below="@id/cinemaAlphaImg"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cinemaBeta"
+            android:layout_below="@id/showMap"
+            android:text="Cinema CGP Beta"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textFontWeight="700"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="16dp"
+            />
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="140dp"
+            android:id="@+id/cinemaBetaImg"
+            android:layout_below="@id/cinemaBeta"
+            android:src="@drawable/cinemabeta"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addressTitleBeta"
+            android:layout_toEndOf="@+id/cinemaBetaImg"
+            android:layout_below="@id/cinemaBeta"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:text="Address:\n\nJakarta Barat, RT.1/RW.9, Kebon Jeruk, Kebonjeruk, Kota Jakarta Barat, Jakarta 11530"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/showMap2"
+            android:text="Show on Map"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="10dp"
+            android:layout_below="@id/cinemaBetaImg"
+            />
+
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>
